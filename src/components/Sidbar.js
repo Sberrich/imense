@@ -1,9 +1,8 @@
 import React, { useState } from "react";
 import logo1 from "../assets/logo1.png";
 import logo from "../assets/logo.png";
-import { RxHamburgerMenu, RxBackpack, RxHome } from "react-icons/rx";
+import { RxHamburgerMenu } from "react-icons/rx";
 import { IoHandRightOutline } from "react-icons/io5";
-import { PiHandshakeThin, PiUser } from "react-icons/pi";
 import Home from "../assets/Home.png";
 import User from "../assets/user.png";
 import Hand from "../assets/hands.png";

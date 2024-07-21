@@ -1,6 +1,10 @@
 // LanguageDropdown.js
 import React, { useState } from 'react';
 import english from '../assets/english.svg'
+import france from '../assets/france.svg'
+import NL from '../assets/nederlands.svg'
+import ES from '../assets/spain.svg'
+import DE from '../assets/germany.svg'
 
 const LanguageDropdown = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -23,20 +27,7 @@ const LanguageDropdown = () => {
         onClick={toggleDropdown}
       >
         <span className="text-gray-800 text-sm"><img src={english}/></span>
-        <svg
-          className="ml-2 w-4 h-4"
-          xmlns="http://www.w3.org/2000/svg"
-          fill="none"
-          viewBox="0 0 24 24"
-          stroke="currentColor"
-        >
-          <path
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            strokeWidth="2"
-            d="M19 9l-7 7-7-7"
-          />
-        </svg>
+    
       </button>
 
       {isOpen && (
@@ -47,7 +38,7 @@ const LanguageDropdown = () => {
                 onClick={() => handleLanguageChange('English')}
                 className=" gap-4 px-4 flex py-2 text-gray-700 hover:bg-gray-100 w-full text-left text-sm"
               >
-               <img src={english}/> English (EN)
+            
               </button>
             </li>
             <li>
@@ -63,10 +54,33 @@ const LanguageDropdown = () => {
                 onClick={() => handleLanguageChange('English')}
                 className=" gap-4 px-4 flex py-2 text-gray-700 hover:bg-gray-100 w-full text-left text-sm"
               >
-               <img src={english}/> English (EN)
+               <img src={france}/> Français (FR))
               </button>
             </li>
-            {/* Add more languages as needed */}
+            <li>
+              <button
+                onClick={() => handleLanguageChange('English')}
+                className=" gap-4 px-4 flex py-2 text-gray-700 hover:bg-gray-100 w-full text-left text-sm"
+              >
+               <img src={NL}/> Nederlands (NL)
+              </button>
+            </li>
+            <li>
+              <button
+                onClick={() => handleLanguageChange('English')}
+                className=" gap-4 px-4 flex py-2 text-gray-700 hover:bg-gray-100 w-full text-left text-sm"
+              >
+               <img src={ES}/>  Español (ES) 
+              </button>
+            </li>
+            <li>
+              <button
+                onClick={() => handleLanguageChange('English')}
+                className=" gap-4 px-4 flex py-2 text-gray-700 hover:bg-gray-100 w-full text-left text-sm"
+              >
+               <img src={DE}/>  Deutsch (DE)  
+              </button>
+            </li>
           </ul>
         </div>
       )}

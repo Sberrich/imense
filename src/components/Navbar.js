@@ -1,9 +1,6 @@
 import React from "react";
-import { RxHamburgerMenu } from "react-icons/rx";
 import { FaArrowsUpDown } from "react-icons/fa6";
 import { GoMoon } from "react-icons/go";
-import { RiArrowDropDownLine } from "react-icons/ri";
-import { GrLanguage } from "react-icons/gr";
 import { IoNotificationsOutline } from "react-icons/io5";
 import AvatarDropdown from "./Avatar";
 import LanguageDropdown from "./Lang";
@@ -25,19 +22,19 @@ function Navbar() {
             </button>
           </li>
           <li className="mr-4">
-          <button
+            <button
               type="button"
               className="flex justify-between gap-2 items-center p-2 rounded-full "
             >
-            <GoMoon className="hover:bg-gray-100" />
+              <GoMoon className="hover:bg-gray-100" />
             </button>
           </li>
           <li className="mr-4">
-          <button
+            <button
               type="button"
               className="flex justify-between gap-2 items-center p-2 rounded-full "
             >
-            <IoNotificationsOutline className="hover:bg-gray-100" />
+              <IoNotificationsOutline className="hover:bg-gray-100" />
             </button>
           </li>
           <li className="mr-4">
