@@ -2,23 +2,27 @@
 import React, { useState } from 'react';
 import { IoSettingsOutline } from "react-icons/io5";
 import { CgDanger, CgLogOut } from "react-icons/cg";
+import avatar from '../assets/Ellipse1.png'
+import { FaArrowDown } from 'react-icons/fa6';
 const AvatarDropdown = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   const toggleDropdown = () => setIsOpen(!isOpen);
 
   return (
-    <div className="relative inline-block text-left">
+    <div className="relative inline-block text-left font-roboto">
       <button
         type="button"
-        className="flex items-center p-2 rounded-full bg-gray-200 hover:bg-gray-300"
+        className="flex justify-between gap-2 items-center p-2 rounded-full "
         onClick={toggleDropdown}
       >
         <img
-          src="https://via.placeholder.com/40" // Replace with your avatar image
+          src={avatar} 
           alt="Avatar"
           className="w-10 h-10 rounded-full"
         />
+        BESIX Group
+        <FaArrowDown/>
       </button>
 
       {isOpen && (
